@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Calendar</title>
+  <link rel="stylesheet" href="css/calendar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="floating-decor" style="top: 10%; left: 5%;">💸</div>
+  <div class="floating-decor" style="top: 30%; right: 10%;">📊</div>
+  <div class="floating-decor" style="bottom: 10%; left: 15%;">💵</div>
+  <div class="floating-decor" style="bottom: 25%; right: 5%;">📈</div>
+
+  <div class="container">
+    <h1>📅 Expense Calendar</h1>
+    <input type="date" id="calendar-date" max="9999-12-31">
+
+    <div id="calendar-expenses">
+      <h2>Daily Breakdown</h2>
+      <div id="daily-expense-list"></div>
+      <canvas id="calendar-chart"></canvas>
+    </div>
+
+    <div class="nav-buttons">
+      <button onclick="location.href='index.html'">🏠 Back to Today</button>
+      <button onclick="location.href='monthly.html'">📆 Monthly Split</button>
+    </div>
+  </div>
+
+  <script src="js/calendar.js"></script>
+</body>
+</html>

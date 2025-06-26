@@ -1,0 +1,95 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(to bottom right, #b0d7ff, #d3f5ec);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #4b7f52;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+input, select, button {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid #d3eedd;
+  background-color: #e8f6f3;
+}
+
+button {
+  background-color: #a3d9b1;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #87c39f;
+}
+
+.expense-list {
+  background-color: #f6fcfb;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.expense-list div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #d3eedd;
+}
+
+canvas {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-buttons button {
+  flex: 1;
+  min-width: 150px;
+}
+
+.floating-decor {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.3;
+  pointer-events: none;
+}

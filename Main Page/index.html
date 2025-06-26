@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kawaii Expense Tracker</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="floating-decor" style="top: 5%; left: 5%;">💸</div>
+  <div class="floating-decor" style="top: 10%; right: 10%;">🪙</div>
+  <div class="floating-decor" style="top: 20%; left: 70%;">💰</div>
+  <div class="floating-decor" style="bottom: 15%; left: 15%;">📈</div>
+  <div class="floating-decor" style="bottom: 20%; right: 5%;">📊</div>
+  <div class="floating-decor" style="top: 50%; left: 30%;">🧾</div>
+  <div class="floating-decor" style="bottom: 5%; right: 25%;">💵</div>
+
+  <div class="container">
+    <h1>📔 Kawaii Expense Tracker</h1>
+    <form id="expense-form">
+      <input type="date" id="expense-date" required />
+      <select id="expense-category" required>
+        <option value="Food">🍱 Food</option>
+        <option value="Transport">🚌 Transport</option>
+        <option value="Entertainment">🎮 Entertainment</option>
+        <option value="Health">💊 Health</option>
+        <option value="Shopping">🛍️ Shopping</option>
+        <option value="Other">✨ Other</option>
+      </select>
+      <input type="number" id="expense-amount" placeholder="Amount" required />
+      <button type="submit">➕ Add Expense</button>
+    </form>
+
+    <h2>Today's Expenses</h2>
+    <div class="expense-list" id="expense-list"></div>
+
+    <h2>Category Split</h2>
+    <canvas id="expense-chart"></canvas>
+
+    <div class="nav-buttons">
+      <button onclick="location.href='calendar.html'">📅 View Calendar</button>
+      <button onclick="location.href='monthly.html'">📊 Monthly Totals</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
