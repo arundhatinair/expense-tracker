@@ -1,6 +1,6 @@
 # 💸Expense Tracker
 
-A cute and minimalist expense tracker built using **HTML**, **CSS**, and **JavaScript**, designed with pastel aesthetics and floating emoji decor. Users can add daily expenses by category, view breakdowns using pie charts, explore expenses on specific dates via a calendar interface, and view monthly totals.
+A cute and minimalist expense tracker built using **HTML**, **CSS**, and **JavaScript**, designed with pastel aesthetics. Users can add daily expenses by category, view breakdowns using pie charts, explore expenses on specific dates via a calendar interface, and view monthly totals.
 
 ## Features
 
@@ -15,7 +15,7 @@ A cute and minimalist expense tracker built using **HTML**, **CSS**, and **JavaS
 - CSS3
 - Vanilla JavaScript
 - [Chart.js](https://www.chartjs.org/) for data visualization
-- 
+  
 ![Screenshot 2025-06-26 100138](https://github.com/user-attachments/assets/4c08a17d-d91a-4cc7-a3e8-ed9cc20d69b8)
 
 
